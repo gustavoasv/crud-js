@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+header {
+  height: 90px;
+  max-width: 90%;
+  margin: 0 auto;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+}
+.container {
+  margin: 0 auto;
+  max-width: 90%;
+  height: 86vh;
+}
+
+.container h2 {
+  padding: 0 0 10px 0;
+}
+
+.new-user {
+  padding: 10px 0 10px 0;
+  border: 1px dashed #ccc;
+}
+
+.new-user p {
+  margin-left: 10px;
+  width: 140px;
+  text-align: center;
+  padding: 10px 0px 10px 0;
+  border-radius: 4px;
+  color: #fff;
+  background: rgb(0, 163, 63);
+  cursor: pointer;
+  border: 1px solid #fff;
+}
+.new-user p:hover {
+  transition: 0.4s;
+  background: rgb(1, 110, 50);
+}

@@ -1,0 +1,75 @@
+:root {
+  --primary-color: #c9c9c9;
+  --secundary-color: #d3d3d356;
+  --shadow-color: #ccc;
+  --text-color: #fff;
+}
+
+.records {
+  width: 100%;
+  user-select: none;
+  margin-top: 10px;
+  text-align: left;
+}
+
+.records th {
+  height: 50px;
+  background-color: var(--primary-color);
+  padding-left: 20px;
+  font-size: 1.2rem;
+}
+.records td {
+  height: 50px;
+  padding-left: 20px;
+  word-break: break-all;
+}
+
+.records th:last-child,
+.records td:last-child {
+  padding: 0;
+  min-width: 140px;
+  text-align: center;
+}
+
+.records tr:hover {
+  background-color: var(--secundary-color);
+}
+.button {
+  color: #fff;
+  cursor: pointer;
+}
+.button.blue {
+  background-color: #0b47b6e1;
+  border: none;
+  padding: 10px;
+}
+
+.button.red {
+  background-color: red;
+  border: none;
+  padding: 10px;
+}
+@media (max-width: 480px) {
+  .records {
+    border-spacing: 5px;
+  }
+  .records thead {
+    display: none;
+  }
+  .records tr {
+    box-shadow: 0 1px 3px var(--shadow-color);
+  }
+  .records td:not(:first-child) {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+
+  .records td {
+    margin: 10px 0;
+  }
+
+  .records tr:hover {
+    background-color: inherit;
+  }
+}

@@ -1,0 +1,75 @@
+.modal-area {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.144);
+}
+.modal-area .modal {
+  width: 90%;
+  margin: 0 auto;
+}
+.modal-area .modal-area-form {
+  width: 400px;
+  max-width: 90vw;
+  background: #fff;
+  border-radius: 4px;
+  margin: 0 auto;
+  height: 410px;
+}
+
+.modal-area .modal-area-form h3 {
+  padding: 10px;
+  margin: 10px 0 10px 0;
+  text-transform: uppercase;
+}
+
+.title-form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgb(212, 212, 212);
+}
+.title-form button {
+  cursor: pointer;
+}
+.title-form .close-modal {
+    
+}
+.modal-area .modal-area-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-area .modal-area-form form input {
+  padding: 10px;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 3px;
+}
+.modal-area .modal-area-form form input:focus {
+  outline: none;
+  border: 1px solid rgb(11, 131, 230);
+}
+
+.modal-area .modal-area-form form label {
+  margin: 10px 0;
+}
+
+.modal-area .modal-area-form .btn-save {
+  display: flex;
+  justify-content: end;
+}
+
+.modal-area .modal-area-form .btn-save div {
+  width: 100px;
+  padding: 5px;
+  margin-top: 8px;
+  text-align: center;
+  cursor: pointer;
+  color: #fff;
+  background: rgb(14, 81, 136);
+}

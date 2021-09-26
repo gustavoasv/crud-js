@@ -1,40 +1,90 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>CRUD com JavaScript</title>
-  </head>
-  <body>
-    <header>
-      <h1>Cadastrar clientes</h1>
-    </header>
-    <div class="container">
-      <h2>cadastro</h2>
-      <div class="new-user">
-        <p>novo cliente</p>
-      </div>
-      <div class="modal-area">
-        <div class="modal-area-form">
-          <div class="modal">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/form.css">
+  <link rel="stylesheet" href="css/table.css">
+  <title>CRUD com JavaScript</title>
+</head>
+
+<body>
+  <header>
+    <h1>Cadastrar clientes</h1>
+  </header>
+  <div class="container">
+    <h2>cadastro</h2>
+    <div class="new-user">
+      <p>novo cliente</p>
+    </div>
+    <table class="records">
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>E-mail</th>
+          <th>Celular</th>
+          <th>Cidade</th>
+          <th>Ação</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- <tr>
+          <td>Maria</td>
+          <td>maria@gmail.com</td>
+          <td>(11) 97165-1111</td>
+          <td>Anapolis</td>
+            <button type="button" class="button blue">editar</button>
+            <button type="button" class="button red">excluir</button>
+          </td>
+        </tr>
+        <tr>
+          <td>João Pedro</td>
+          <td>joao@gmail.com</td>
+          <td>(11) 97165-2222</td>
+          <td>Jandira</td>
+          <td>
+            <button type="button" class="button blue">editar</button>
+            <button type="button" class="button red">excluir</button>
+          </td>
+        </tr>
+        <tr>
+          <td>Jose da Silva</td>
+          <td>jose@gmail.com</td>
+          <td>(11) 97165-3333</td>
+          <td>São Roque</td>
+          <td>
+            <button type="button" class="button blue">editar</button>
+            <button type="button" class="button red">excluir</button>
+          </td>
+        </tr> -->
+      </tbody>
+    </table>
+    <div class="modal-area" style="display:none">
+      <div class="modal-area-form">
+        <div class="modal">
+          <div class="title-form">
             <h3>Adicionar</h3>
+            <button class="close-modal">X</button>
+          </div>
           <form>
             <label>nome</label>
-            <input type="text" placeholder="Nome do cliente">
+            <input type="text" placeholder="Nome do cliente" class="input-name geral">
             <label>email</label>
-            <input type="text" placeholder="Email do cliente">
+            <input type="email" placeholder="Email do cliente" class="input-email geral">
             <label>cidade</label>
-            <input type="text" placeholder="Cidade do cliente">
+            <input type="text" placeholder="Cidade do cliente" class="input-cidade geral">
             <label>telefone</label>
-            <input type="text" placeholder="Telefone do cliente">
+            <input type="text" placeholder="Telefone do cliente" class="input-tel geral">
           </form>
           <div class="btn-save">
             <div>salvar</div>
           </div>
-          </div>
         </div>
       </div>
-  </body>
+    </div>
+    <script src="script.js"></script>
+</body>
 </html>
